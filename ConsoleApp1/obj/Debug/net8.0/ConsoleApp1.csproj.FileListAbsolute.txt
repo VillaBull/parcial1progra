@@ -12,3 +12,4 @@ C:\Users\villa\OneDrive\Desktop\ExamenProgra1\ConsoleApp1\ConsoleApp1\obj\Debug\
 C:\Users\villa\OneDrive\Desktop\ExamenProgra1\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 C:\Users\villa\OneDrive\Desktop\ExamenProgra1\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\villa\OneDrive\Desktop\ExamenProgra1\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\villa\OneDrive\Desktop\ExamenProgra1\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.sourcelink.json

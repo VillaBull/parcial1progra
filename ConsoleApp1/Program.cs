@@ -1,4 +1,6 @@
-﻿int numero;
+﻿//programa 1
+
+int numero;
 
 do
 {
@@ -48,3 +50,52 @@ static long CalcularFactorial(int n)
     }
     return factorial;
 }
+//Programa 2
+Console.WriteLine("Ingrese el primer número entero:");
+if (!int.TryParse(Console.ReadLine(), out int num1))
+{
+    Console.WriteLine("Por favor, ingrese un número entero válido.");
+    return;
+}
+
+Console.WriteLine("Ingrese el segundo número entero:");
+if (!int.TryParse(Console.ReadLine(), out int num2))
+{
+    Console.WriteLine("Por favor, ingrese un número entero válido.");
+    return;
+}
+
+Console.WriteLine("Ingrese el operador matemático (+, -, *, /):");
+char signo = Console.ReadLine()[0];
+
+double resultado = 0;
+
+switch (signo)
+{
+    case '+':
+        resultado = num1 + num2;
+        break;
+    case '-':
+        resultado = num1 - num2;
+        break;
+    case '*':
+        resultado = num1 * num2;
+        break;
+    case '/':
+        if (num2 == 0)
+        {
+            Console.WriteLine("No se puede dividir entre cero.");
+            return;
+        }
+        resultado = (double)num1 / num2;
+        break;
+    default:
+        Console.WriteLine("Operador no válido.");
+        return;
+}
+
+Console.WriteLine($"El resultado de la operación {num1} {signo} {num2} es: {resultado}");
+
+
+  
+
