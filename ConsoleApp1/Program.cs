@@ -96,6 +96,51 @@ switch (signo)
 
 Console.WriteLine($"El resultado de la operación {num1} {signo} {num2} es: {resultado}");
 
+//programa 3
+Console.WriteLine("Ingrese un número para generar una tabla de multiplicar:");
+if (!int.TryParse(Console.ReadLine(), out int valor))
+{
+    Console.WriteLine("Por favor, ingrese un número válido.");
+    return;
+}
 
-  
+Console.WriteLine($"Tabla de multiplicar del {valor}:");
+for (int i = 1; i <= 10; i++)
+{
+    int tabla = valor * i;
+    Console.WriteLine($"{valor} x {i} = {tabla}");
+}
+
+//Programa 4
+Random random = new Random();
+int numeroSecreto = random.Next(1, 101); 
+int intentos = 0;
+
+Console.WriteLine("Bienvenido al juego de adivinar el número secreto entre 1 y 100.");
+
+while (true)
+{
+    Console.WriteLine("Introduce un número:");
+    if (!int.TryParse(Console.ReadLine(), out int numeroUsuario))
+    {
+        Console.WriteLine("Por favor, introduce un número válido.");
+        continue;
+    }
+
+    intentos++;
+
+    if (numeroUsuario == numeroSecreto)
+    {
+        Console.WriteLine($"¡Felicidades! Has adivinado el número secreto {numeroSecreto} en {intentos} intentos.");
+        break;
+    }
+    else if (numeroUsuario < numeroSecreto)
+    {
+        Console.WriteLine("El número secreto es mayor.");
+    }
+    else
+    {
+        Console.WriteLine("El número secreto es menor.");
+    }
+}
 
